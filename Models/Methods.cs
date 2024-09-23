@@ -7,11 +7,9 @@ namespace Unit1Proj.Models
     {
 
         public string Name { get; set;  }
-        public string Fighter(string Name)
+        public string Fighter()
         {
-            Name = Name + "Won't Beat Sora, I'm Sora sorry";
-
-            return Name;
+            return this.Name + " Won't Beat Sora, I'm Sora sorry";
         }
 
     }

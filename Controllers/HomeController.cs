@@ -8,14 +8,22 @@ namespace Unit1Proj.Controllers
     // THIS IS THE ENTIRE REASON THE PAGE SHOWS
     public class HomeController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
-            return View("Index");
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Index(Methods a)
+        {
+            // a.Name += "changed";
+            ViewBag.Fighter = a.Fighter();
+            return View(a);
         }
 
         public IActionResult Result()
         {
-            return View("Result");
+            return View("Cheatsheet");
         }
     }
 }

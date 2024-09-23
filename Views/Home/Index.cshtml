@@ -18,7 +18,7 @@
     <form asp-action="Index" method="post">
         @* supposed to be able to parse the data *@
         <br>Enter your fighters name: <input asp-for="Name" />
-
+        <p>@ViewBag.Fighter</p>
         <button type="submit">Check?</button>
     </form>
     @* Button to head to the cheatsheet *@
