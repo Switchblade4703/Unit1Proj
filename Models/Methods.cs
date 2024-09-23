@@ -5,7 +5,15 @@ namespace Unit1Proj.Models
 {
     public class Methods
     {
-        [Required]
-        public string Fighter { get; set; } = "Sonic";
+
+        public string Name { get; set;  }
+        public string Fighter(string Name)
+        {
+            Name = Name + "Won't Beat Sora, I'm Sora sorry";
+
+            return Name;
+        }
+
     }
+
 }
