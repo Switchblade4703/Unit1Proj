@@ -14,12 +14,14 @@
 <body>
     <h1>Enter Your FIGHTER!</h1>
     <h2>Can it beat Sora?</h2>
+    @* Form to enter a name *@
     <form asp-action="Index" method="post">
-
+        @* supposed to be able to parse the data *@
         <br>Enter your fighters name: <input asp-for="Name" />
 
         <button type="submit">Check?</button>
     </form>
+    @* Button to head to the cheatsheet *@
     <form asp-action="Result" method="post">
         <button type="submit">Check cheatsheet?</button>
     </form>
